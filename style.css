@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #081b29;
+    color: white;
+}
+
+header {
+    background-color: #061521;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span {
+    color: cyan;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: cyan;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+}
+
+.home {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.home h1 {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+.home h2, .intro {
+    color: cyan;
+}
+
+.home p {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: cyan;
+    color: black;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.secondary {
+    background: transparent;
+    color: cyan;
+    border: 1px solid cyan;
+}
+
+
+.profile-circle {
+    width: 250px;
+    height: 250px;
+    border: 4px solid cyan;
+    border-radius: 50%;
+    background-color: #102e42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cyan;
+}
+
+
+.section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.section-title span {
+    color: cyan;
+}
+
+
+.about-content {
+    background-color: #102e42;
+    padding: 25px;
+    line-height: 1.8;
+    border-radius: 10px;
+}
+
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.skill-card {
+    background-color: #102e42;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.skill-card h3 {
+    color: cyan;
+    margin-bottom: 10px;
+}
+
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.project-card {
+    background-color: #102e42;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.project-card h3 {
+    color: cyan;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-card span {
+    color: cyan;
+    font-size: 12px;
+}
+
+
+.contact p {
+    margin: 15px;
+}
+
+
+footer {
+    background-color: #061521;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    .menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #061521;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .skill-container,
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+}
