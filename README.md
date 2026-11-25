@@ -6,7 +6,7 @@ This is a responsive portfolio website created to introduce myself, showcase my 
 
 ## 🌐 Live Demo
 
-Add your deployed website link here.
+https://bhavyagupta1017.github.io/Portfolio/
 
 ## 👩‍💻 About the Project
 
